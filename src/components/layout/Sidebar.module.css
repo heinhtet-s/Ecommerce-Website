@@ -1,0 +1,13 @@
+.drawer-header {
+    width: 240px;
+    font-size: 20px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.drawer-header p {
+    font-weight: bold;
+
+}

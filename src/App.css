@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  user-select: none;
+}
+
+:root {
+  --text-color: rgb(44, 44, 44);
+  --bg-color: #f5f6fa;
+  --secondary-color: #fff;
+  --main-color: #ba1e23;
+  --background-color: rgb(3, 54, 3);
+  --live-header: #2b2a2a;
+  --secondary-hover: rgb(77, 10, 10);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* width */
+*::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+*::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+*::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+*::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+.scroll-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scroll-hide {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100vw;
+  color: #000133;
+  padding-top: 60px;
+}
+
+button:focus,
+button:focus-visible {
+  outline: none !important;
+}
+
+.header,
+.footer {
+  display: flex;
+  background: #00022e;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  color: #fc86aa;
+}
+
+.icon {
+  padding: 10px;
+}
+
+.icon:hover {
+  cursor: pointer;
+}
+
+.header-title {
+  margin: auto;
+}
+
+.drawer {
+  background: var(--secondary-color);
+  width: 0px;
+  transition: width 0.7s;
+}
+
+.opened {
+  width: 240px;
+}
+
+.header,
+.footer {
+  background: #00022e;
+  height: 50px;
+  color: #fc86aa;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+}
+
+.drawer {
+  background: var(--secondary-color);
+  position: absolute;
+  height: 100vh;
+  z-index: 10;
+  left: 0px;
+  overflow-x: hidden;
+  top: 0px;
+  box-shadow: 0px 0px 3px rgb(200, 198, 198);
+  width: 240px;
+}
+
+.main {
+  flex: 1;
+  background: var(--bg-color);
+}
+
+.drawer {
+  width: 0px;
+  transition: width 0.7s;
+}
+
+.opened {
+  width: 240px;
+}
